@@ -47,6 +47,9 @@ namespace GoogleARCore.Examples.AugmentedImage
         /// </summary>
         public AugmentedImageVisualizer[] AugmentedImageVisualizerPrefab;
 
+        public AugmentedImageVisualizer ImageVisualizerPrefab1;
+        public AugmentedImageVisualizer ImageVisualizerPrefab2;
+
         /// <summary>
         /// The overlay containing the fit to scan user guide.
         /// </summary>
@@ -97,16 +100,57 @@ namespace GoogleARCore.Examples.AugmentedImage
 
             // Create visualizers and anchors for updated augmented images that are tracking and do
             // not previously have a visualizer. Remove visualizers for stopped images.
-            for (int i = 0; i< m_TempAugmentedImages.Count;  i++)// image in m_TempAugmentedImages)
+            //for (int i = 0; i< m_TempAugmentedImages.Count;  i++)// image in m_TempAugmentedImages)
+            //{
+            //    var image1 = m_TempAugmentedImages[0];
+            //    AugmentedImageVisualizer visualizer1 = null;
+            //    m_Visualizers.TryGetValue(image1.DatabaseIndex, out visualizer1);
+
+            //    if (image1.TrackingState == TrackingState.Tracking && visualizer1 == null)
+            //    {
+            //        Create an anchor to ensure that ARCore keeps tracking this augmented image.
+            //        Anchor anchor = image1.CreateAnchor(image1.CenterPose);
+            //        visualizer1 = (AugmentedImageVisualizer)Instantiate(
+            //            ImageVisualizerPrefab1, anchor.transform);
+            //        visualizer1.Image = image1;
+            //        m_Visualizers.Add(image1.DatabaseIndex, visualizer1);
+            //    }
+            //    else if (image1.TrackingState == TrackingState.Stopped && visualizer1 != null)
+            //    {
+            //        m_Visualizers.Remove(image1.DatabaseIndex);
+            //        GameObject.Destroy(visualizer1.gameObject);
+            //    }
+
+            //    var image2 = m_TempAugmentedImages[1];
+            //    AugmentedImageVisualizer visualizer2 = null;
+            //    m_Visualizers.TryGetValue(image2.DatabaseIndex, out visualizer2);
+
+            //    if (image2.TrackingState == TrackingState.Tracking && visualizer2 == null)
+            //    {
+            //        Create an anchor to ensure that ARCore keeps tracking this augmented image.
+            //    Anchor anchor = image2.CreateAnchor(image2.CenterPose);
+            //        visualizer2 = (AugmentedImageVisualizer)Instantiate(
+            //            ImageVisualizerPrefab1, anchor.transform);
+            //        visualizer2.Image = image2;
+            //        m_Visualizers.Add(image2.DatabaseIndex, visualizer2);
+            //    }
+            //    else if (image2.TrackingState == TrackingState.Stopped && visualizer2 != null)
+            //    {
+            //        m_Visualizers.Remove(image2.DatabaseIndex);
+            //        GameObject.Destroy(visualizer2.gameObject);
+            //    }
+            //}
+
+            foreach (var image in m_TempAugmentedImages)
             {
-                var image = m_TempAugmentedImages[i];
+                int i = image.DatabaseIndex;
                 AugmentedImageVisualizer visualizer = null;
                 m_Visualizers.TryGetValue(image.DatabaseIndex, out visualizer);
-
-                if (image.TrackingState == TrackingState.Tracking && visualizer == null)
+                if (image.TrackingMethod == AugmentedImageTrackingMethod.FullTracking && visualizer == null)
                 {
                     // Create an anchor to ensure that ARCore keeps tracking this augmented image.
                     Anchor anchor = image.CreateAnchor(image.CenterPose);
+
                     visualizer = (AugmentedImageVisualizer)Instantiate(
                         AugmentedImageVisualizerPrefab[i], anchor.transform);
                     visualizer.Image = image;
@@ -116,8 +160,12 @@ namespace GoogleARCore.Examples.AugmentedImage
                 {
                     m_Visualizers.Remove(image.DatabaseIndex);
                     GameObject.Destroy(visualizer.gameObject);
+
+
                 }
+
             }
+
 
             // Show the fit-to-scan overlay if there are no images that are Tracking.
             foreach (var visualizer in m_Visualizers.Values)

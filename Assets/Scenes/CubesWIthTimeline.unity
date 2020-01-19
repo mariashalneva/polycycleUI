@@ -316,6 +316,21 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5019038168486982127, guid: 81fa50c215ff20a4c84caf45ba78a52a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 442419184}
+    - target: {fileID: 5019038168486982127, guid: 81fa50c215ff20a4c84caf45ba78a52a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowInfo
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019038168486982127, guid: 81fa50c215ff20a4c84caf45ba78a52a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5019038168668137274, guid: 81fa50c215ff20a4c84caf45ba78a52a,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -470,6 +485,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a002b4dfcaf9260468d7f7461b68f9d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Explore: {fileID: 442419186}
+  Info: {fileID: 442419185}
+--- !u!114 &442419185 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5019038167724134062, guid: 81fa50c215ff20a4c84caf45ba78a52a,
+    type: 3}
+  m_PrefabInstance: {fileID: 442419181}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &442419186 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5019038168486982127, guid: 81fa50c215ff20a4c84caf45ba78a52a,
+    type: 3}
+  m_PrefabInstance: {fileID: 442419181}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &510561440

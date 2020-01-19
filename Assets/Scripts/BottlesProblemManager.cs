@@ -40,6 +40,7 @@ namespace GoogleARCore.Examples.HelloAR
         public int counter = 0;
         public TextMeshProUGUI text;
         public GameObject infoPanel;
+        public GameObject textPanel;
         public GameObject infoPanel2;
 
         private List<GameObject> bottleObjects;
@@ -89,7 +90,7 @@ namespace GoogleARCore.Examples.HelloAR
         private void Start()
         {
             bottleObjects = new List<GameObject>();
-            text.gameObject.SetActive(true);
+            textPanel.gameObject.SetActive(true);
             Invoke("InstantiateBottles", 0.2f);
         }
 
@@ -135,7 +136,7 @@ namespace GoogleARCore.Examples.HelloAR
             if (counter >= 346)
             {
 
-                text.gameObject.SetActive(false);
+                textPanel.gameObject.SetActive(false);
                 ///
                 //shpw message
 
@@ -291,10 +292,13 @@ namespace GoogleARCore.Examples.HelloAR
                     bottleObjects[i].GetComponent<BottleItem>().ChangeColor(false);
             }
 
-
-            infoPanel2.SetActive(true);
+            Invoke("set2panelact", 5);
         }
 
+        private void set2panelact()
+        {
+            infoPanel2.SetActive(true);
+        }
 
         public void TryAgain()
         {

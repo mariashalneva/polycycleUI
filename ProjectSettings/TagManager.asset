@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Cup
   - Bottle
+  - InfoCup
+  - InfoBottle
+  - InfoStraw
   layers:
   - Default
   - TransparentFX

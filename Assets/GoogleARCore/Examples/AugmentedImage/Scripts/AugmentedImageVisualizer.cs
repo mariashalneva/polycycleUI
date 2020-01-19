@@ -37,6 +37,8 @@ namespace GoogleARCore.Examples.AugmentedImage
         /// </summary>
         public AugmentedImage Image;
 
+        public PlasticTypes type;
+
         private SceneManagerController sceneManagerController;
 
         private void Awake()
@@ -55,6 +57,7 @@ namespace GoogleARCore.Examples.AugmentedImage
                 return;
             }
 
+            sceneManagerController.SelectObjectId(type);
             this.gameObject.SetActive(true);
          
         }

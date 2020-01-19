@@ -154,8 +154,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c099759b7b62dbf41b19d891d7da077f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  norm: {r: 0.49411765, g: 0.69411767, b: 0.6627451, a: 1}
-  danger: {r: 0.9245283, g: 0.25729796, b: 0.25729796, a: 1}
+  norm: {r: 0, g: 0.5137255, b: 0.56078434, a: 0.32941177}
+  danger: {r: 0.61960787, g: 0.61960787, b: 0.61960787, a: 0.33333334}
   renderer: {fileID: 2839205255694861780}
 --- !u!1 &2803951924080993141
 GameObject:
