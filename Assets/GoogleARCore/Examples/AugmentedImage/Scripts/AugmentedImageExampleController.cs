@@ -47,8 +47,6 @@ namespace GoogleARCore.Examples.AugmentedImage
         /// </summary>
         public AugmentedImageVisualizer AugmentedImageVisualizerPrefab;
 
-        public TextMeshProUGUI text;
-
         /// <summary>
         /// The overlay containing the fit to scan user guide.
         /// </summary>
@@ -101,7 +99,6 @@ namespace GoogleARCore.Examples.AugmentedImage
                 AugmentedImageVisualizer visualizer = null;
                 m_Visualizers.TryGetValue(image.DatabaseIndex, out visualizer);
 
-                text.text = m_Visualizers.Values.Count + "           "+ image.TrackingState.ToString();
                 if (image.TrackingState == TrackingState.Tracking && visualizer == null)
                 {
                     // Create an anchor to ensure that ARCore keeps tracking this augmented image.
@@ -127,7 +124,6 @@ namespace GoogleARCore.Examples.AugmentedImage
                     return;
                 }
             }
-            text.text = m_Visualizers.Values.Count + "           ";
             FitToScanOverlay.SetActive(true);
         }
     }
