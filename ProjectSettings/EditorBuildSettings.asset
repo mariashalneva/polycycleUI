@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/GoogleARCore/Examples/AugmentedImage/Scenes/AugmentedImage.unity
     guid: be567d47d3ab94b3badc5b211f535a24
   - enabled: 1
+    path: Assets/Scenes/CubesWIthTimeline.unity
+    guid: 2b76a8d057309db4982c943788b65bd8
+  - enabled: 1
     path: Assets/Scenes/BottlesProblem.unity
     guid: e222c62228f598e44b30df6f30620215
   m_configObjects: {}

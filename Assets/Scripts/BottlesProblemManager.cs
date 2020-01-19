@@ -125,7 +125,7 @@ namespace GoogleARCore.Examples.HelloAR
             //cube.transform.position = FirstPersonCamera.transform.TransformPoint(0, 0, 0.5f);
             //cube.GetComponentInChildren<Rigidbody>().AddForce(FirstPersonCamera.transform.TransformDirection(0, 1f, 2f), ForceMode.Impulse);
             //Instantiate(cube);
-           
+
         }
         /// <summary>
         /// The Unity Update() method.
@@ -283,7 +283,7 @@ namespace GoogleARCore.Examples.HelloAR
         {
 
             infoPanel.SetActive(false);
-            for (int i = 0; i< bottleObjects.Count; i++)
+            for (int i = 0; i < bottleObjects.Count; i++)
             {
                 if (i % 5 == 0)
                     bottleObjects[i].GetComponent<BottleItem>().ChangeColor(true);
@@ -293,6 +293,12 @@ namespace GoogleARCore.Examples.HelloAR
 
 
             infoPanel2.SetActive(true);
+        }
+
+
+        public void TryAgain()
+        {
+            Application.LoadLevel(Application.loadedLevel);
         }
     }
 }

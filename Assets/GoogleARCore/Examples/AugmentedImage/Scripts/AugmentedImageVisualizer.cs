@@ -37,6 +37,12 @@ namespace GoogleARCore.Examples.AugmentedImage
         /// </summary>
         public AugmentedImage Image;
 
+        private SceneManagerController sceneManagerController;
+
+        private void Awake()
+        {
+            sceneManagerController = FindObjectOfType<SceneManagerController>();
+        }
 
         /// <summary>
         /// The Unity Update method.

@@ -45,7 +45,7 @@ namespace GoogleARCore.Examples.AugmentedImage
         /// <summary>
         /// A prefab for visualizing an AugmentedImage.
         /// </summary>
-        public AugmentedImageVisualizer AugmentedImageVisualizerPrefab;
+        public AugmentedImageVisualizer[] AugmentedImageVisualizerPrefab;
 
         /// <summary>
         /// The overlay containing the fit to scan user guide.
@@ -57,6 +57,9 @@ namespace GoogleARCore.Examples.AugmentedImage
 
         public AugmentedImage[] m_TempAugmentedImagePREFRABS;
         public List<AugmentedImage> m_TempAugmentedImages = new List<AugmentedImage>();
+
+
+        public AugmentedImageVisualizer currentSelected;
         /// <summary>
         /// The Unity Awake() method.
         /// </summary>
@@ -94,8 +97,9 @@ namespace GoogleARCore.Examples.AugmentedImage
 
             // Create visualizers and anchors for updated augmented images that are tracking and do
             // not previously have a visualizer. Remove visualizers for stopped images.
-            foreach (var image in m_TempAugmentedImages)
+            for (int i = 0; i< m_TempAugmentedImages.Count;  i++)// image in m_TempAugmentedImages)
             {
+                var image = m_TempAugmentedImages[i];
                 AugmentedImageVisualizer visualizer = null;
                 m_Visualizers.TryGetValue(image.DatabaseIndex, out visualizer);
 
@@ -104,7 +108,7 @@ namespace GoogleARCore.Examples.AugmentedImage
                     // Create an anchor to ensure that ARCore keeps tracking this augmented image.
                     Anchor anchor = image.CreateAnchor(image.CenterPose);
                     visualizer = (AugmentedImageVisualizer)Instantiate(
-                        AugmentedImageVisualizerPrefab, anchor.transform);
+                        AugmentedImageVisualizerPrefab[i], anchor.transform);
                     visualizer.Image = image;
                     m_Visualizers.Add(image.DatabaseIndex, visualizer);
                 }
@@ -126,5 +130,6 @@ namespace GoogleARCore.Examples.AugmentedImage
             }
             FitToScanOverlay.SetActive(true);
         }
+
     }
 }
