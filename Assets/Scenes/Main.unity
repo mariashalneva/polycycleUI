@@ -1409,11 +1409,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: HelpPanel
       objectReference: {fileID: 0}
-    - target: {fileID: 6846358512801894578, guid: d8b803779a8f7a64384e72db5937bbb6,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6846358513835217577, guid: d8b803779a8f7a64384e72db5937bbb6,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Target
