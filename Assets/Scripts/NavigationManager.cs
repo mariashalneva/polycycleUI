@@ -9,6 +9,8 @@ public class NavigationManager : MonoBehaviour
     public Button Explore;
     public Button Info;
 
+    public GameObject[] InfoPanels;
+
     private void Awake()
     {
         sceneManagerController = FindObjectOfType<SceneManagerController>();
@@ -40,6 +42,12 @@ public class NavigationManager : MonoBehaviour
 
     public void ShowInfo()
     {
-        sceneManagerController.ShowInfoPage();
+        var currentType = sceneManagerController.currentType;
+        if (currentType == PlasticTypes.Cup)
+            InfoPanels[0].SetActive(true);
+        else if (currentType == PlasticTypes.Bottle)
+            InfoPanels[1].SetActive(true);
+        else if (currentType == PlasticTypes.Straw)
+            InfoPanels[1].SetActive(true);
     }
 }

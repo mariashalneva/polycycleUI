@@ -379,7 +379,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sometimes
+  m_text: No
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -448,7 +448,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 4322565946442419986}
-    characterCount: 9
+    characterCount: 2
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -844,7 +844,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Polystyrene (PS)
+  m_text: PP Polypropylene 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -913,10 +913,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 4322565946874385287}
-    characterCount: 16
+    characterCount: 18
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 2
+    spaceCount: 2
+    wordCount: 3
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -1116,7 +1116,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1000+ years
+  m_text: Up to 200 years
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1185,10 +1185,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 4322565947181069340}
-    characterCount: 11
+    characterCount: 15
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 2
+    spaceCount: 3
+    wordCount: 4
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -1563,7 +1563,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Glass, ceramic mugs or tumblers
+  m_text: Metal, Bamboo, Other organic materials
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1632,7 +1632,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 4322565947803663038}
-    characterCount: 31
+    characterCount: 38
     spriteCount: 0
     spaceCount: 4
     wordCount: 5
@@ -1910,7 +1910,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 500 billion per year
+  m_text: 500 million straws are used every single day in the U.S.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1955,7 +1955,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 23
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -1979,12 +1979,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 4322565948147038104}
-    characterCount: 20
+    characterCount: 56
     spriteCount: 0
-    spaceCount: 3
-    wordCount: 4
+    spaceCount: 10
+    wordCount: 12
     linkCount: 0
-    lineCount: 1
+    lineCount: 3
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -2437,17 +2437,42 @@ PrefabInstance:
     - target: {fileID: 767826825734022603, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 767826825734022603, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 767826825734022603, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 767826825734022603, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 767826825734022603, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 767826825734022603, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1075.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 767826825734022603, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 767826825734022603, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1171844529717485787, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
         type: 3}
@@ -2531,6 +2556,41 @@ PrefabInstance:
       value: "The \u201CAgave Project\u201D straws are a first-of-its-kind biodegradable,
         bio-based drinking straw, made from agave tequila waste, that will decompose
         up to 200 times faster than regular plastic."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780792194090517686, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780792194090517686, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780792194090517686, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780792194090517686, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2297246193494967190, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
+        type: 3}
+      propertyPath: m_Horizontal
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2297246193494967190, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
+        type: 3}
+      propertyPath: m_Vertical
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2297246193494967190, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
+        type: 3}
+      propertyPath: m_VerticalScrollbarVisibility
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2784872752308040254, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
         type: 3}
@@ -2634,6 +2694,26 @@ PrefabInstance:
       propertyPath: m_textInfo.spaceCount
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3959271264545484771, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3959271264545484771, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3959271264545484771, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3959271264545484771, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4018593488004650889, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -2685,6 +2765,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 52883d48a507fb24083eec325ce5cbdd,
         type: 3}
+    - target: {fileID: 5173222037044656016, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5173222037862962901, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
         type: 3}
       propertyPath: m_Color.r
@@ -2790,7 +2875,47 @@ PrefabInstance:
     - target: {fileID: 6072523105915615825, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000017255545
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6072523105915615825, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 6072523105915615825, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6072523105915615825, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6072523105915615825, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6072523105915615825, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6072523105915615825, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6072523105915615825, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6072523105915615825, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6636876381131405384, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
         type: 3}
@@ -2987,6 +3112,11 @@ PrefabInstance:
     - target: {fileID: 8355490890650335228, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
         type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8355490890650335228, guid: 8edf0eabcaffaa94285b2cb70e3b843e,
+        type: 3}
+      propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8487611694450194688, guid: 8edf0eabcaffaa94285b2cb70e3b843e,

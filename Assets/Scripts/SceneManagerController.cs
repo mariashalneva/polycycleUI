@@ -34,7 +34,6 @@ public class SceneManagerController : MonoBehaviour
         }
     }
 
-
     public void SelectObjectId()
     {
         var selectedItem = FindObjectsOfType<AugmentedImageVisualizer>();
@@ -73,7 +72,7 @@ public class SceneManagerController : MonoBehaviour
         else if (currentType == PlasticTypes.Bottle)
             SceneManager.LoadScene(2);
         else if(currentType == PlasticTypes.Straw)
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(2);
     }
 
     public void BackToTheMainPage()
@@ -84,16 +83,13 @@ public class SceneManagerController : MonoBehaviour
 
     public void ShowInfoPage()
     {
-        GameObject panel = new GameObject();
         SelectObjectId();
         if (currentType == PlasticTypes.Cup)
-            panel = GameObject.FindGameObjectWithTag("InfoCup");
+            InfoPanels[0].SetActive(true);
         else if (currentType == PlasticTypes.Bottle)
-            panel = GameObject.FindGameObjectWithTag("InfoBottle");
+            InfoPanels[1].SetActive(true);
         else if (currentType == PlasticTypes.Straw)
-            panel = GameObject.FindGameObjectWithTag("InfoStraw");
-
-        panel.SetActive(true);
+            InfoPanels[1].SetActive(true);
     }
 
 }

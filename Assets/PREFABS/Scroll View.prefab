@@ -376,7 +376,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.00013128354}
+  m_AnchoredPosition: {x: 0, y: -0.00000051981397}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &3400183536188798373
@@ -1019,7 +1019,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 8355490890650335228}
   m_Direction: 2
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.9997116
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1557,6 +1557,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GalleryItem
       objectReference: {fileID: 0}
+    - target: {fileID: 7733539637371033259, guid: 42bbecd30a7473043a325bc5cb2985f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8510860411842096433, guid: 42bbecd30a7473043a325bc5cb2985f9,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -1847,6 +1852,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GalleryItem (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7733539637371033259, guid: 42bbecd30a7473043a325bc5cb2985f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8510860411842096433, guid: 42bbecd30a7473043a325bc5cb2985f9,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -2136,6 +2146,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GalleryItem (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7733539637371033259, guid: 42bbecd30a7473043a325bc5cb2985f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8510860411842096433, guid: 42bbecd30a7473043a325bc5cb2985f9,
         type: 3}
